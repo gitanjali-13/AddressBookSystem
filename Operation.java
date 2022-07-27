@@ -93,5 +93,15 @@ public class Operation {
 		    	con.setPhoneNumber(phoneno);
 		 }
     }
+    
+public void delete() {
+		System.out.println("Delete the Person");
+		String fname = scanner.next();
+		System.out.println(fname+"");
+		if (fname.equals(con.getFirstName())) {
+				contactDetails.remove(con);
+				System.out.println("contact is Deleted from the Address Book");
+			}
+	}
 }
 		    	
